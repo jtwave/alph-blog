@@ -1,0 +1,12 @@
+<h1>Alpha Bloggers</h1>
+<table>
+
+<% @users.each do |usr| %>
+
+    <tr>
+        <td><%=usr.username %></td>
+        <td><%=usr.articles.length %> articles </td>
+    </tr>
+<% end %>
+
+</table>
