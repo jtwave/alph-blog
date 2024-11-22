@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :articles
+  resources :users, except: [:new]
   get 'signup', to: 'users#new'
   post 'users', to: 'users#create'
   
